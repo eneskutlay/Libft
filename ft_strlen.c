@@ -6,11 +6,13 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 13:03:36 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/03 13:18:23 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/05 20:29:12 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *str)
 {
 	int	i;
 

@@ -6,9 +6,11 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 17:47:12 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/04 17:51:53 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/05 20:28:25 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
