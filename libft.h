@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 19:50:32 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/05 20:21:07 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/07 20:30:03 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,16 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 
 void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *string, int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(char *str);
+size_t	ft_strlcat(char *dest, const char *src, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);
