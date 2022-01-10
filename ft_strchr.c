@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/04 17:09:55 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/05 20:28:49 by ekutlay          ###   ########.fr       */
+/*   Created: 2022/01/10 16:04:44 by ekutlay           #+#    #+#             */
+/*   Updated: 2022/01/10 16:12:59 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,17 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0' && c != *s)
+	size_t	i;
+	size_t	len;
+
+	i = -1;
+	len = ft_strlen(s);
+	while (++i < len + 1)
 	{
-		s++;
+		if (s[i] == (char)c)
+		{
+			return (((void *)&((char *)s)[i]));
+		}
 	}
-	if (c == *s)
-	{
-		return ((char *)s);
-	}
-	return (0);
+	return (NULL);
 }
