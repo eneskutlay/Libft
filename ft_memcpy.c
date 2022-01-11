@@ -6,13 +6,13 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 19:32:02 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/11 16:54:38 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/11 17:14:01 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
