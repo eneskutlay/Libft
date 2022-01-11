@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 19:32:02 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/07 20:21:36 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/11 16:54:38 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
 	size_t	i;
 
-	if (dst == '\0' && src == '\0')
+	if (dst == (void *)0 && src == (void *)0)
 	{
 		return (dst);
 	}
