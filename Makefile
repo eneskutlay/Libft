@@ -6,7 +6,7 @@
 #    By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/08 16:58:02 by ekutlay           #+#    #+#              #
-#    Updated: 2022/01/11 18:42:56 by ekutlay          ###   ########.fr        #
+#    Updated: 2022/01/12 18:42:49 by ekutlay          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ FLAGS = -Wall -Wextra -Werror
 SOURCE = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 		 ft_memchr.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c \
 		 ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strrchr.c ft_tolower.c ft_toupper.c \
-		 ft_memcmp.c \
+		 ft_memcmp.c ft_atoi.c ft_strdup.c \
 
 
 OBJ = $(SOURCE:.c=.o)
