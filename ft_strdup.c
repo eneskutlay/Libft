@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 18:36:00 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/12 18:42:10 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/19 21:00:29 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,26 @@
 
 char	*ft_strdup(const char *s)
 {
-	char	*str;
+	char	*new;
 	int		len;
+	int		i;
 
-	if (s)
+	i = 0;
+	len = 0;
+	while (s[len])
 	{
-		len = ft_strlen(s);
-		str = (char *)malloc(sizeof(char) * (len + 1));
-		if (!str)
-		{
-			return (NULL);
-		}
-		ft_memcpy(str, s, len);
-		*(str + len) = '\0';
-		return (str);
+		len++;
 	}
-	return (NULL);
+	new = (char *)malloc(sizeof(char) * (len + 1));
+	if (!new)
+	{
+		return (NULL);
+	}
+	while (s[i])
+	{
+		new[i] = s[i];
+		i++;
+	}
+	new[i] = '\0';
+	return (new);
 }

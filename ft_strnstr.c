@@ -5,25 +5,37 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 19:44:21 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/12 19:44:23 by ekutlay          ###   ########.fr       */
+/*   Created: 2022/01/19 21:13:18 by ekutlay           #+#    #+#             */
+/*   Updated: 2022/01/19 21:20:12 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *h, const char *needle, size_t len)
+char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	c;
+	char	*src;
+	char	*find;
+	size_t	size;
 
-	if (*needle == 0 || h == needle)
-		return ((char *)h);
-	c = ft_strlen(needle);
-	while (*h && c <= len--)
+	src = (char *)s1;
+	find = (char *)s2;
+	size = ft_strlen(find);
+	if (size == 0)
 	{
-		if (!(ft_strncmp((char *)h, (char *)needle, c)))
-			return ((char *)h);
-		h++;
+		return ((char *)src);
 	}
-	return (NULL);
+	if (size > n)
+	{
+		return ((char *) NULL);
+	}
+	while (n-- >= size && *src)
+	{
+		if (ft_strncmp(src, find, size) == 0)
+		{
+			return ((char *)src);
+		}
+		src++;
+	}
+	return ((char *) NULL);
 }
