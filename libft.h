@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 19:50:32 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/19 22:16:18 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/20 21:00:31 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,10 @@ char	*ft_strdup(const char *s);
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+void	ft_putchar_fd(char c, int fd);
 
 #endif
