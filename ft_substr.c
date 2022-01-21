@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 19:17:52 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/20 20:27:32 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/20 21:11:49 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s || !subs)
 	{
 		return (NULL);
-	}	
+	}
 	while (s[i])
 	{
 		if (i >= start && d < len)
