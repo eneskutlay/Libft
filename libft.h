@@ -6,7 +6,7 @@
 /*   By: ekutlay <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 19:50:32 by ekutlay           #+#    #+#             */
-/*   Updated: 2022/01/21 22:33:32 by ekutlay          ###   ########.fr       */
+/*   Updated: 2022/01/22 03:53:02 by ekutlay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	**ft_split(const char *s, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
